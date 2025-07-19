@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/articles.css') }}">
+{% endblock %}
+
+{% block content %}
+<section class="banner-video">
+  <video autoplay muted loop playsinline class="banner-video-bg">
+    <source src="{{ url_for('static', filename='videos/abstract_waves_banner_video.mp4') }}" type="video/mp4">
+    <img src="{{ url_for('static', filename='fallback.jpg') }}" alt="fallback image">
+    Your browser does not support the video tag.
+  </video>
+</section>
+
+<section id="articles" class="articles">
+  <h1>
+    <span class="material-symbols-outlined icon article" aria-hidden="true">article</span>
+    Articles
+  </h1>
+  <p>This is where I share thoughts, tools, and experiments from the world of design, innovation, and strategy.</p>
+  <br>
+  <div class="articles-grid">
+    {% for article in articles %}
+    <div class="card">
+      <img src="{{ url_for('static', filename=article.image) }}" alt="{{ article.title }}">
+      <div class="card-content">
+        <span class="tag">{{ article.tag }}</span>
+        <h3>{{ article.title }}</h3>
+        <p>{{ article.summary }}</p>
+        <a href="{{ article.link }}" class="btn-small">Read</a>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+{% endblock %}

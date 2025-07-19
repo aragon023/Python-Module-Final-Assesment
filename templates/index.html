@@ -76,7 +76,20 @@
           I write about the intersections of innovation, design, technology, and business to explore how creative thinking and strategic moves can drive real impact. 
           If you're into bold moves and fresh perspectives, you're in the right place.    
         </p>
-        <div id="featuredArticles" class="articles-grid"></div>
+        <div class="featured-articles">
+          {% for article in featured_articles %}
+          <div class="card">
+            <img src="{{ url_for('static', filename=article.image) }}" alt="{{ article.title }}">
+            <div class="card-content">
+              <span class="tag">{{ article.tag }}</span>
+              <h3>{{ article.title }}</h3>
+              <p>{{ article.summary }}</p>
+              <a href="{{ article.link }}" class="btn-small">Read</a>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+
       </section>
 
       <!-- Projects Section -->
