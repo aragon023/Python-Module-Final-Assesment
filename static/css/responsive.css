@@ -1,0 +1,171 @@
+
+/* --- Responsive Styles --- */
+
+
+/* Media Query ≤ 960px */
+@media (max-width: 960px) {
+
+
+ .articles-grid {
+    grid-template-columns: 1fr;
+  }
+
+
+}
+
+/* Media Query ≤ 760px */
+@media (max-width: 760px) {
+
+/* Hamburger Button (Material Symbol Style) */
+.hamburger {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: none;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.hamburger .material-symbols-outlined {
+  font-size: 32px;
+  color: var(--color-white);
+}
+
+
+  .main-nav {
+    display: none;
+    position: absolute;
+    top: 80px; 
+    right: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0;
+    z-index: 1000;
+  }
+
+  .main-nav.active {
+    display: flex;
+  }
+
+  .main-nav ul {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .main-nav ul li {
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0;
+  }
+
+
+  .intro,
+  .about,
+  .projects,
+  .tools {
+    padding: 2rem 1rem;
+  }
+
+       .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+
+    .contact-section {
+    padding: 0.5rem;
+    margin: 2rem 1rem;
+  }
+
+  .contact-description {
+    font-size: 0.95rem;
+  }
+
+ form {
+    align-items: center;
+  }
+
+  form .form-group {
+    max-width: 100%;
+    text-align:center;
+  }
+
+  form input,
+form textarea {
+  max-width: 300px;
+  text-align: left;
+  margin: 0 auto;
+}
+
+ .footer-links ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+  }
+
+.footer-links ul {
+  display: flex;
+  justify-content: center;
+  gap: 0.8rem; 
+  flex-wrap: wrap; 
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+  .footer-links {
+    padding: 1rem;
+    text-align: center;
+  }
+
+}
+
+/* ≤ 320px: Ultra-thin screen tweaks */
+@media (max-width: 320px) {
+  body {
+    font-size: 0.95rem;
+  }
+
+  h1, h2 {
+    font-size: 1.4rem;
+  }
+
+  .hamburger span {
+    width: 20px;
+    height: 2px;
+  }
+
+  .nav-links {
+    font-size: 0.9rem;
+  }
+
+
+     .projects-grid {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+
+  .project-description {
+    font-size: 0.85rem;
+  }
+
+  .tools-image img {
+    max-height: 180px;
+  }
+
+form input,
+form textarea {
+  max-width: 300px;
+}
+
+ 
+
+}
+
+
+
