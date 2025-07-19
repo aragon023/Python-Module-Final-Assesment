@@ -1,5 +1,5 @@
 from flask import Flask, render_template
-
+from project_data import projects_list # This imports the projects list
 
 
 app = Flask(__name__)
@@ -12,9 +12,9 @@ def index():
 def about():
     return render_template("about.html")
 
-@app.route("/projects")
+@app.route('/projects')
 def projects():
-    return render_template("projects.html")
+    return render_template('projects.html', projects=projects_list)
 
 @app.route("/tools")
 def tools():

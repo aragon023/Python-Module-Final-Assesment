@@ -29,7 +29,7 @@
     {% block extra_head %}{% endblock %}
 </head>
 <body>
-
+  <div class="body-container">
     <!-- Navigation -->
 <header>
     <div class="logo">
@@ -86,13 +86,13 @@
     <p>&copy; 2025 All Rights Reserved</p>
   </div>
 </footer>
-
+  </div>
 
     <!-- Scripts -->
     <script src="{{ url_for('static', filename='js/navigation.js') }}" defer></script>
-  
 
     <!-- Page-specific JS -->
     {% block extra_scripts %}{% endblock %}
+  
 </body>
 </html>
