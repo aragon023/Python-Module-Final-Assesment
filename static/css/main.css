@@ -24,7 +24,7 @@ body {
   font-optical-sizing: auto;
   font-style: normal;
   font-size: 1rem;
-  background-color: var(--color-blue-light);
+  background-color: var(--color-grey-dark);
   color: var(--color-black);
 }
 
@@ -34,7 +34,7 @@ body {
 }
 
 header {
-  background-color: var(--color-grey-dark);
+  background-color: var(--color-black);
   height: 120px;            
   padding: 0 20px;         
   top: 0;
@@ -43,6 +43,7 @@ header {
   align-items: center;     
   justify-content: space-between;
 }
+
 
 /* General Navigation Container */
 
