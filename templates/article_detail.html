@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/individual_articles.css') }}">
+{% endblock %}
+
+{% block content %}
+<main class="article-page">
+  <article class="article-content">
+    <img src="{{ url_for('static', filename=article.image) }}"
+         alt="{{ article.title }}" class="article-hero" />
+
+    <div class="social-share">
+      <p>Share this article:</p>
+      <a href="https://www.facebook.com/sharer/sharer.php?u={{ request.url }}"
+         target="_blank" rel="noopener" aria-label="Share on Facebook">
+        <img src="{{ url_for('static', filename='images/social_media_icons/facebook.png') }}"
+             alt="Facebook" />
+      </a>
+      <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ request.url }}&title={{ article.title|urlencode }}"
+         target="_blank" rel="noopener" aria-label="Share on LinkedIn">
+        <img src="{{ url_for('static', filename='images/social_media_icons/linkedin.png') }}"
+             alt="LinkedIn" />
+      </a>
+    </div>
+
+    <span class="tag">{{ article.tag }}</span>
+    <h1>{{ article.title }}</h1>
+    <p class="article-meta">
+      By {{ article.author }} • {{ article.published_on.strftime('%B %Y') }}
+    </p>
+
+    {{ article.content|safe }}
+
+    <div class="article-cta">
+      <a href="{{ url_for('articles') }}" class="btn-small">← Back to Articles</a>
+    </div>
+  </article>
+</main>
+{% endblock %}

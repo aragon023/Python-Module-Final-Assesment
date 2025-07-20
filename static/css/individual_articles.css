@@ -43,7 +43,7 @@
   margin-bottom: 1rem;
 }
 
-blockquote {
+.article-page blockquote {
   margin: 2rem 0;
   padding: 1rem 1.5rem;
   background-color: var(--color-grey-light);

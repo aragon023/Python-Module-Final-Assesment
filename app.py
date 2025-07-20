@@ -30,6 +30,11 @@ def articles():
     articles_list = Article.query.all()
     return render_template("articles.html", articles=articles_list)
 
+@app.route('/articles/<slug>')
+def article_detail(slug):
+    article = Article.query.filter_by(slug=slug).first_or_404()
+    return render_template('article_detail.html', article=article)
+
 @app.route("/contact")
 def contact():
     return render_template("contact.html")

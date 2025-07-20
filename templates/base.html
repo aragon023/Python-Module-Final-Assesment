@@ -15,8 +15,9 @@
     <!-- Stylesheets -->
     <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/responsive.css') }}">
-
-      {% block extra_css %}{% endblock %}
+    
+    <!-- Page-specific Styelesheets -->
+    {% block extra_css %}{% endblock %}
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
