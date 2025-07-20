@@ -7,6 +7,15 @@
 {% endblock %}
 
 {% block content %}
+<section class="banner-video">
+  <video autoplay muted loop playsinline class="banner-video-bg">
+    <source src="{{ url_for('static', filename='videos/abstract_waves_banner_video.mp4') }}" type="video/mp4">
+    <img src="{{ url_for('static', filename='images/fallback.jpg') }}" alt="fallback image">
+    Your browser does not support the video tag.
+  </video>
+</section>
+
+
 <section id="articles" class="articles">
     <h1>
         <span class="material-symbols-outlined icon article">article</span>
