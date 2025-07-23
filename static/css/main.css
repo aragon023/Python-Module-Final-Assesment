@@ -34,56 +34,50 @@ body {
 }
 
 header {
-  background-color: var(--color-black);
-  height: 120px;            
-  padding: 0 20px;         
+  position: sticky;
   top: 0;
   z-index: 1000;
-  display: flex;           
-  align-items: center;     
-  justify-content: space-between;
+  background-color: var(--color-black);
+  max-width: 1140px;
+  margin: 0 auto;
 }
 
-
-/* General Navigation Container */
-
-/* Logo Styling */
-.logo img {
-    height: auto;
-    width: 200px;
-    padding: 20px;
-}
-
-/* Navigation Menu */
-/* Base Styles */
 .nav-container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 30px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  box-sizing: border-box; 
-  height: 80px;
-  position: relative;
-  z-index: 1000;
+  justify-content: space-between; 
+  height: 120px;
+  box-sizing: border-box;
 }
 
-nav ul {
+.logo img {
+  max-width: 200px;
+  height: auto;
+  display: block;
+}
+
+/* Make sure nav stays aligned right and has spacing */
+.main-nav ul {
   display: flex;
   gap: 1.5rem;
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-.nav-links a {
-  font-size: 1rem;
-  font-weight: 500;
+.main-nav a {
   color: var(--color-white);
   text-decoration: none;
-  transition: color 0.3s ease;
+  font-weight: 500;
 }
 
-.nav-links a:hover {
-  color: var(--color-yellow-light); 
+.main-nav a:hover {
+  color: var(--color-yellow-light);
 }
+
 
 /* Hamburger Menu */
 .hamburger {
@@ -93,22 +87,21 @@ nav ul {
   gap: 5px;
 }
 
-
-/* Navigation CTA*/
+/* CTA Button in Nav */
 .nav-cta-btn {
   display: inline-block;
   background-color: var(--color-blue);
   color: var(--color-white);
   padding: 10px;
   border: none;
-  border-radius: 20px;;       
+  border-radius: 20px;
   text-decoration: none;
   font-weight: bold;
   transition: background-color 0.3s ease;
 }
 
 .nav-cta-btn:hover {
-background-color: var(--color-yellow-light); 
+  background-color: var(--color-yellow-light);
 }
 
 /* Articles */

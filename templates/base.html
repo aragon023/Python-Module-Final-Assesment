@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/responsive.css') }}">
     
-    <!-- Page-specific Styelesheets -->
+    <!-- Page-specific Stylesheets -->
     {% block extra_css %}{% endblock %}
 
     <!-- Google Fonts -->
@@ -30,70 +30,72 @@
     {% block extra_head %}{% endblock %}
 </head>
 <body>
-  <div class="body-container">
-    <!-- Navigation -->
+
+  <!-- Navigation -->
 <header>
+  <div class="nav-container">
     <div class="logo">
-        <a href="{{ url_for('index') }}">
-            <img src="{{ url_for('static', filename='images/holisk_logo_negative.webp') }}" alt="Holisk Logo" class="logo-img">
-        </a>
+      <a href="{{ url_for('index') }}">
+        <img src="{{ url_for('static', filename='images/holisk_logo_negative.webp') }}" alt="Holisk Logo" class="logo-img">
+      </a>
     </div>
 
-        <!-- Hamburger Menu -->
-        <button class="hamburger" id="hamburger-button">
-            <span class="material-symbols-outlined">menu</span>
-        </button>
+    <button class="hamburger" id="hamburger-button">
+      <span class="material-symbols-outlined">menu</span>
+    </button>
 
-        <!-- Navigation Links -->
-        <nav class="main-nav" id="nav-menu">
-            <ul>
-                <li><a href="{{ url_for('index') }}">Home</a></li>
-                <li><a href="{{ url_for('about') }}">About</a></li>
-                <li><a href="{{ url_for('projects') }}">Projects</a></li>
-                <li><a href="{{ url_for('tools') }}">Tools</a></li>
-                <li><a href="{{ url_for('articles') }}">Articles</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <!-- Page Content -->
-    <main>
-        {% block content %}{% endblock %}
-    </main>
-
-    <!-- Footer -->
-<footer class="footer">
-  <div class="footer-logo">
-    <a href="{{ url_for('index') }}">
-      <img src="{{ url_for('static', filename='images/holisk_logo_negative.webp') }}" alt="Holisk Logo">
-    </a>
+    <nav class="main-nav" id="nav-menu">
+      <ul>
+        <li><a href="{{ url_for('index') }}">Home</a></li>
+        <li><a href="{{ url_for('about') }}">About</a></li>
+        <li><a href="{{ url_for('projects') }}">Projects</a></li>
+        <li><a href="{{ url_for('tools') }}">Tools</a></li>
+        <li><a href="{{ url_for('articles') }}">Articles</a></li>
+      </ul>
+    </nav>
   </div>
-  
-  <div class="footer-links">
-    <ul>
-      <li><a href="{{ url_for('about') }}">About Me</a></li>
-      <li><a href="{{ url_for('articles') }}">Articles</a></li>
-      <li><a href="{{ url_for('projects') }}">Projects</a></li>
-      <li><a href="{{ url_for('tools') }}">Tools</a></li>
-      <li><a href="{{ url_for('contact') }}">Contact</a></li>
-    </ul>
+</header>
+
+
+  <!-- Page Content Wrapper -->
+  <div class="body-container">
+      <main>
+          {% block content %}{% endblock %}
+      </main>
   </div>
 
-  <div class="footer-contact">
-    <p>contact@holisk.com</p>
-  </div>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-logo">
+      <a href="{{ url_for('index') }}">
+        <img src="{{ url_for('static', filename='images/holisk_logo_negative.webp') }}" alt="Holisk Logo">
+      </a>
+    </div>
+    
+    <div class="footer-links">
+      <ul>
+        <li><a href="{{ url_for('about') }}">About Me</a></li>
+        <li><a href="{{ url_for('articles') }}">Articles</a></li>
+        <li><a href="{{ url_for('projects') }}">Projects</a></li>
+        <li><a href="{{ url_for('tools') }}">Tools</a></li>
+        <li><a href="{{ url_for('contact') }}">Contact</a></li>
+      </ul>
+    </div>
 
-  <div class="footer-legal">
-    <p>&copy; 2025 All Rights Reserved</p>
-  </div>
-</footer>
-  </div>
+    <div class="footer-contact">
+      <p>contact@holisk.com</p>
+    </div>
 
-    <!-- Scripts -->
-    <script src="{{ url_for('static', filename='js/navigation.js') }}" defer></script>
+    <div class="footer-legal">
+      <p>&copy; 2025 All Rights Reserved</p>
+    </div>
+  </footer>
 
-    <!-- Page-specific JS -->
-    {% block extra_scripts %}{% endblock %}
-  
+  <!-- Scripts -->
+  <script src="{{ url_for('static', filename='js/navigation.js') }}" defer></script>
+
+  <!-- Page-specific JS -->
+  {% block extra_scripts %}{% endblock %}
+
 </body>
 </html>
