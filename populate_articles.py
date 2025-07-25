@@ -48,12 +48,12 @@ articles_data = [
         'published_on': datetime(2025, 5, 1),
         'content': '''
             <p>Artificial intelligence is rapidly transforming the way creative professionals work—boosting productivity, expanding artistic possibilities, and removing tedious tasks from the process. 
-            From generating visuals to enhancing writing and editing workflows, today’s AI tools can help designers, writers, and creators take their projects to new levels.</p>
+            From generating visuals to enhancing writing and editing workflows, today's AI tools can help designers, writers, and creators take their projects to new levels.</p>
 
             <h2>My Top Picks</h2>
 
             <h3>1. Adobe Firefly</h3>
-            <p>A powerful generative AI tool built into Adobe’s Creative Cloud suite. It allows creators to generate images, vectors, and design elements from simple text prompts.</p>
+            <p>A powerful generative AI tool built into Adobe's Creative Cloud suite. It allows creators to generate images, vectors, and design elements from simple text prompts.</p>
 
             <h3>2. Runway</h3>
             <p>Runway offers a suite of AI-powered video and image editing tools, ideal for content creators, filmmakers, and designers looking to experiment with generative media.</p>
@@ -68,7 +68,7 @@ articles_data = [
             <p>A collaborative audio/video editing platform that uses AI to simplify transcription, editing, and voice cloning—perfect for podcasters and video editors.</p>
 
             <h3>6. Canva Magic Studio</h3>
-            <p>Canva’s AI suite includes text-to-image generation, Magic Write (AI writing assistant), and layout suggestions to speed up design tasks for marketers and content teams.</p>
+            <p>Canva's AI suite includes text-to-image generation, Magic Write (AI writing assistant), and layout suggestions to speed up design tasks for marketers and content teams.</p>
 
             <h3>7. DALL·E</h3>
             <p>Created by OpenAI, DALL·E can generate unique and often surreal images from prompts—ideal for conceptual art, mood boards, and experimental design work.</p>
@@ -83,7 +83,7 @@ articles_data = [
             <p>Figma has begun integrating AI features that suggest design components, automate repetitive tasks, and accelerate UI/UX workflows.</p>
 
             <blockquote>
-                “AI won’t replace creativity—it will supercharge it, freeing people to focus on what humans do best: imagine, design, and innovate.”
+                “AI won't replace creativity—it will supercharge it, freeing people to focus on what humans do best: imagine, design, and innovate.”
             </blockquote>
 
             <p>As creative work evolves, integrating the right AI tools can enhance not just what we make—but how we think about making it. Whether you're a solo creator or part of a larger team, experimenting with these tools can unlock new levels of efficiency and inspiration.</p>
