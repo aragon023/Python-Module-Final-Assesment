@@ -1,21 +1,21 @@
 const tools = [
   {
     title: 'Empathy Map',
-    image: 'images/tools/empathy_mapping.jpg',
+    image: '/static/images/tools/empathy_mapping.jpg',
     tags: ['Empathy'],
     description: 'Understand and articulate what a user experiences.',
     details: 'An Empathy Map is a simple, powerful tool used in design thinking and user-centered design. It captures insights about user behavior, emotions, and motivations. Typically divided into Think & Feel, Hear, See, Say & Do, Pains, and Gains, it’s widely used early in product development.'
   },
   {
     title: 'Affinity Diagramming',
-    image: 'images/tools/affinity_diagram.jpg',
+    image: '/static/images/tools/affinity_diagram.jpg',
     tags: ['Planning'],
     description: 'Group ideas into clusters to find patterns.',
     details: 'Affinity diagramming helps organize ideas, data, and insights by grouping them into meaningful categories or clusters. It’s used to uncover relationships between concepts and is especially useful during brainstorming or synthesis phases.'
   },
   {
     title: 'Five Whys',
-    image: 'images/tools/five_whys.jpg',
+    image: '/static/images/tools/five_whys.jpg',
     tags: ['Problem Solving'],
     description: 'Explore root causes by asking "why" repeatedly.',
     details: 'The 5 Whys technique is a problem-solving method used to identify the root cause of a problem. By asking "Why?" five times (or more), you uncover deeper insights that help guide corrective action.'

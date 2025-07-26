@@ -35,11 +35,12 @@ def article_detail(slug):
     article = Article.query.filter_by(slug=slug).first_or_404()
     return render_template('article_detail.html', article=article)
 
+
 @app.route("/contact")
 def contact():
     return render_template("contact.html")
 
 if __name__ == '__main__':
     with app.app_context():
-        db.create_all()  # creates tables if they don't exist
+        db.create_all() 
     app.run(debug=True)
