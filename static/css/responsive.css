@@ -1,16 +1,19 @@
 
 /* --- Responsive Styles --- */
 
-
-/* Media Query ≤ 960px */
+/* Media Query ≤ 960px 
 @media (max-width: 960px) {
-
 
  .articles-grid {
     grid-template-columns: 1fr;
   }
-
+    
+  .featured-articles {
+    grid-template-columns: 1fr;
+  }
+  
 }
+*/
 
 /* Media Query ≤ 760px */
 @media (max-width: 760px) {

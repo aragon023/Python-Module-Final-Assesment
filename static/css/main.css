@@ -33,7 +33,7 @@ body {
   margin: 0 auto;
 }
 
-/* Nav Bar*/
+/* Navigation Bar*/
 header {
   position: sticky;
   top: 0;
@@ -57,8 +57,6 @@ header {
 .second-nav-container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  width: 100%;
 }
 
 .logo img {
@@ -138,7 +136,6 @@ footer ul {
   text-decoration: none;
   transition: color 0.3s ease;
 }
-
 
 
 
