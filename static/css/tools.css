@@ -101,12 +101,11 @@
     }
 
 
-/* Modal Section -- Provides styling for the cards once you click on them */
-
+/* Modal Section -- Styling for the cards */
     .modal {
       display: none;
       position: fixed;
-      z-index: 999;
+      z-index: 2000;
       left: 0;
       top: 0;
       width: 100%;
