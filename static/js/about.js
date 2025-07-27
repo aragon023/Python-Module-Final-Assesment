@@ -13,7 +13,7 @@ function showContent(newIndex, direction = 'right') {
   next.classList.remove("exit-left", "exit-right");
   next.classList.add("active");
 
-  // Reset exiting class after animation
+  // Reseting class after animation
   setTimeout(() => {
     current.classList.remove("exit-left", "exit-right");
   }, 400);

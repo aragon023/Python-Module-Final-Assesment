@@ -23,7 +23,7 @@ const articles = [
   }
 ];
 
-// Generate a full list on Articles Page
+// Generating a full list on the articles page
 const fullGrid = document.getElementById("articlesGrid");
 if (fullGrid) {
   articles.forEach(article => {
@@ -32,7 +32,7 @@ if (fullGrid) {
   });
 }
 
-// Select random articles for  Homepage
+// Selecting random articles for the homepage
 const homepageGrid = document.getElementById("featuredArticles");
 if (homepageGrid) {
   const random = getRandomArticles(articles, 3);
@@ -42,7 +42,7 @@ if (homepageGrid) {
   });
 }
 
-// Create an article card element
+// Creating an article card 
 function createArticleCard(article) {
   const card = document.createElement("div");
   card.className = "card";
@@ -58,7 +58,7 @@ function createArticleCard(article) {
   return card;
 }
 
-// Pick N random items
+// Pick random items
 function getRandomArticles(arr, count) {
   const shuffled = [...arr].sort(() => 0.5 - Math.random());
   return shuffled.slice(0, count);
