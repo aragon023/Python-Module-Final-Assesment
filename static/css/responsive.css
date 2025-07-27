@@ -10,31 +10,28 @@
     grid-template-columns: 1fr;
   }
 
-
 }
 
 /* Media Query ≤ 760px */
 @media (max-width: 760px) {
 
-/* Hamburger Button (Material Symbol Style) */
+/* Hamburger Button */
 .hamburger {
   display: flex;
-  justify-content: center;
   align-items: center;
   background: none;
   border: none;
   padding: 10px;
   cursor: pointer;
   z-index: 1001;
-}
+  }
 
 .hamburger .material-symbols-outlined {
   font-size: 32px;
   color: var(--color-white);
-}
+  }
 
-
-  .main-nav {
+.main-nav {
     display: none;
     position: absolute;
     top: 80px; 
@@ -98,17 +95,17 @@ form textarea {
   max-width: 300px;
   text-align: left;
   margin: 0 auto;
-}
-
- .footer-links ul {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0;
-    margin: 0;
   }
 
-.footer-links ul {
+  .footer-links ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  }
+
+  .footer-links ul {
   display: flex;
   justify-content: center;
   gap: 0.8rem; 
@@ -116,11 +113,11 @@ form textarea {
   padding: 0;
   margin: 0;
   list-style: none;
-}
+  }
 
   .footer-links {
-    padding: 1rem;
-    text-align: center;
+  padding: 1rem;
+  text-align: center;
   }
 
 }
@@ -141,11 +138,12 @@ form textarea {
   }
 
   .nav-links {
-    font-size: 0.9rem;
+    font-size: 0.3px;
+
   }
 
 
-     .projects-grid {
+  .projects-grid {
     grid-template-columns: 1fr;
     padding: 1rem;
   }
@@ -158,12 +156,11 @@ form textarea {
     max-height: 180px;
   }
 
-form input,
-form textarea {
+  form input,
+  form textarea {
   max-width: 300px;
-}
+  }
 
- 
 
 }
 
