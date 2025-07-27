@@ -72,29 +72,32 @@
 
   <!-- Footer -->
   <footer class="footer">
-    <div class="footer-logo">
-      <a href="{{ url_for('index') }}">
-        <img src="{{ url_for('static', filename='images/holisk_logo_negative.webp') }}" alt="Holisk Logo">
-      </a>
-    </div>
-    
-    <div class="footer-links">
-      <ul>
-        <li><a href="{{ url_for('about') }}">About Me</a></li>
-        <li><a href="{{ url_for('articles') }}">Articles</a></li>
-        <li><a href="{{ url_for('projects') }}">Projects</a></li>
-        <li><a href="{{ url_for('tools') }}">Tools</a></li>
-        <li><a href="{{ url_for('contact') }}">Contact</a></li>
-      </ul>
-    </div>
-
-    <div class="footer-contact">
-      <p>contact@holisk.com</p>
+    <div class="footer-elements">
+      <div class="footer-logo">
+        <a href="{{ url_for('index') }}">
+          <img src="{{ url_for('static', filename='images/holisk_logo_negative.webp') }}" alt="Holisk Logo">
+        </a>
+      </div>
+      
+      <div class="footer-links">
+        <ul>
+          <li><a href="{{ url_for('about') }}">About Me</a></li>
+          <li><a href="{{ url_for('articles') }}">Articles</a></li>
+          <li><a href="{{ url_for('projects') }}">Projects</a></li>
+          <li><a href="{{ url_for('tools') }}">Tools</a></li>
+          <li><a href="{{ url_for('contact') }}">Contact</a></li>
+        </ul>
+      </div>
     </div>
 
-    <div class="footer-legal">
-      <p>&copy; 2025 All Rights Reserved</p>
-    </div>
+      <div class="footer-contact">
+        <p>contact@holisk.com</p>
+      </div>
+
+      <div class="footer-legal">
+        <p>&copy; 2025 All Rights Reserved</p>
+      </div>
+   
   </footer>
 
   <!-- Scripts -->
