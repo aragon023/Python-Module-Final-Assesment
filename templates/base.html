@@ -40,10 +40,6 @@
       </a>
     </div>
 
-    <button class="hamburger" id="hamburger-button">
-      <span class="material-symbols-outlined">menu</span>
-    </button>
-
     <nav class="main-nav" id="nav-menu">
       <ul>
         <li><a href="{{ url_for('index') }}">Home</a></li>
@@ -53,6 +49,15 @@
         <li><a href="{{ url_for('articles') }}">Articles</a></li>
       </ul>
     </nav>
+
+      <!-- Hamburger Menu -->
+    <button class="hamburger" id="hamburger-button">
+      <span class="material-symbols-outlined">menu</span>
+    </button>
+    
+    <!-- CTA Button -->
+    <a href="{{ url_for('contact') }}" class="nav-cta-btn">Get in touch</a>
+
   </div>
 </header>
 
