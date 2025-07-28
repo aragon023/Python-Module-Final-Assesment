@@ -33,6 +33,7 @@
   color: var(--color-white);
   }
 
+
 .main-nav {
     display: none;
     position: absolute;
@@ -116,8 +117,8 @@
 
 }
 
-/* ≤ 320px: Ultra-thin screen tweaks */
-@media (max-width: 320px) {
+/* ≤ 450px: Ultra-thin screen tweaks */
+@media (max-width: 450px) {
   body {
     font-size: 0.95rem;
   }
@@ -126,10 +127,20 @@
     font-size: 1.4rem;
   }
 
+    .nav-container {
+    flex-wrap: wrap; 
+    justify-content: center;
+  }
 
-  .hamburger span {
-    width: 20px;
-    height: 2px;
+  .logo img {
+    max-width: 150px; 
+    height: auto;
+    
+  }
+
+  .nav-cta-btn {
+    width: fit-content;
+    margin: 0 auto; 
   }
 
   .nav-links {
