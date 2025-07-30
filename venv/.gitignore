@@ -15,8 +15,7 @@ instance/
 .vscode/
 .idea/
 
-# OS-specific files
-.DS_Store
+# Windows specific files
 Thumbs.db
 
 
