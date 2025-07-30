@@ -100,21 +100,20 @@
   margin: 0 auto;
   }
 
+  .footer-elements {
+    flex-direction: column;
+    text-align: center;
+  }
+
   .footer-links ul {
-  display: flex;
-  justify-content: center;
-  gap: 0.8rem; 
-  flex-wrap: wrap; 
-  padding: 0;
-  margin: 0;
-  list-style: none;
+    justify-content: center;
+    margin-top: 1rem;
   }
 
-  .footer-links {
-  padding: 1rem;
-  text-align: center;
+  .footer-additional {
+    flex-direction: column;
+    text-align: center;
   }
-
 }
 
 /* ≤ 450px: Ultra-thin screen tweaks */

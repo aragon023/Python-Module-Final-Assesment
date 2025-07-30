@@ -108,45 +108,6 @@ header {
   background-color: var(--color-yellow-light);
 }
 
-
-/* Footer */
-footer {
-  background: var(--color-black);
-  color: var(--color-white);
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  max-width: 1140px;
-  margin: auto;
-  align-items: center;
-}
-
-.footer-elements {
-  display: flex;
-  align-items: center;
-  text-align: center;
-  padding: 20px;
-}
-
-.footer img {
-    height: auto;
-    width: 150px;
-    padding: 2rem;
-}
-
-footer ul {
-  display: flex;
-  gap: 1.5rem;
-  list-style: none;
-}
-
-.footer-links a {
-  font-size: 1rem;
-  color: var(--color-white);
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
 /* CTA Buttons*/
 
 .cta-btn {
@@ -163,3 +124,73 @@ footer ul {
 .cta-btn:hover {
   background-color: var(--color-orange);
 }
+
+/* Footer*/
+.footer {
+  background: var(--color-black);
+  color: var(--color-white);
+  padding: 2rem 2rem;
+  width: 100%;
+  box-sizing: border-box;
+  max-width: 1140px;
+  margin: auto;
+}
+
+.footer-elements {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1140px;
+  margin: 0 auto;
+  flex-wrap: wrap; 
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--color-grey-medium);
+}
+
+.footer-logo img {
+  width: 150px;
+  height: auto;
+}
+
+.footer-links ul {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+}
+
+.footer-links a {
+  font-size: 1rem;
+  color: var(--color-white);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: var(--color-yellow-light);
+}
+
+.footer-additional {
+  max-width: 1140px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 0.9rem;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.footer-contact,
+.footer-legal {
+  margin: 0.5rem 0;
+}
+
+.footer-contact p,
+.footer-legal p {
+  margin: 0;
+}
+
