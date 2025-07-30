@@ -5,6 +5,7 @@
 {% block extra_head %}
   <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
   <link rel="stylesheet" href="{{ url_for('static', filename='css/responsive.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
 {% endblock %}
 
 {% block content %}
@@ -57,7 +58,7 @@
               Through this website, I explore and share practical ideas, tools, and reflections aimed at helping others build better products, stronger strategies, and more meaningful customer experiences.
             </p> 
 
-            <a href="about.html" class="cta-btn">Know More</a>
+            <a href="{{ url_for('about') }}" class="cta-btn">Know More</a>
           </div>
 
           <div class="about-image">
@@ -205,7 +206,7 @@
       <section class="tools">
         <h2>Ready to start innovating?</h2>
         <p>Check some of our practical tools and frameworks.</p>
-        <a href="tools.html" class="cta-btn">Explore</a>
+        <a href="{{ url_for('tools') }}" class="cta-btn">Explore</a>
         <div class="tools-image">
           <img src="{{ url_for('static', filename='images/home/toolkit.jpg') }}" alt="toolkit">
         </div>

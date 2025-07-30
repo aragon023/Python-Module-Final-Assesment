@@ -1,7 +1,9 @@
 {% extends "base.html" %}
 
 {% block extra_css %}
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
   <link rel="stylesheet" href="{{ url_for('static', filename='css/about.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/responsive.css') }}">
 {% endblock %}
 
 {% block content %}
@@ -84,7 +86,7 @@
     <img src="{{ url_for('static', filename='images/about/pluto_logo.png') }}" alt="Pluto Logo">
   </div>
 
-  <a href="{{ url_for('projects') }}" class="cta-btn">View Projects</a>
+    <a href="{{ url_for('projects') }}" class="cta-btn">View Projects</a>
 </section>
 {% endblock %}
 
