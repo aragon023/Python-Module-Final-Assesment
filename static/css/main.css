@@ -83,12 +83,11 @@ header {
   color: var(--color-yellow-light);
 }
 
+
+
 /* Hamburger Menu */
 .hamburger {
   display: none;
-  flex-direction: column;
-  cursor: pointer;
-  gap: 5px;
 }
 
 /* CTA Button in Nav */

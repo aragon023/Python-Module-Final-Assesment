@@ -4,6 +4,7 @@
 /* Media Query ≤ 960px */
 @media (max-width: 960px) {
 
+
  .articles-grid {
     grid-template-columns: 1fr;
   }
@@ -14,26 +15,24 @@
   
 }
 
-/* Media Query ≤ 760px */
 @media (max-width: 760px) {
-
-/* Hamburger Button */
-.hamburger {
-  display: flex;
-  align-items: center;
-  background: none;
-  border: none;
-  padding: 10px;
-  cursor: pointer;
-  z-index: 1001;
+  .hamburger {
+    display: flex !important; 
+    align-items: center;
+    background: none;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 2000; 
+    position: relative;
   }
 
-.hamburger .material-symbols-outlined {
-  font-size: 32px;
-  color: var(--color-white);
+  .hamburger .material-symbols-outlined {
+    font-size: 32px;
+    color: var(--color-white); /* Adjust for dark or light background */
   }
 
-
+/* Hamburger Button  */
 .main-nav {
     display: none;
     position: absolute;
@@ -146,7 +145,6 @@
     font-size: 0.3px;
 
   }
-
 
   .projects-grid {
     grid-template-columns: 1fr;
