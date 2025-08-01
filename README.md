@@ -120,7 +120,7 @@ Goal: Build credibility, humanise the brand, and communicate your unique skillse
 Title: Featured Articles
 Text Summary:
 Content focuses on trends at the intersection of innovation, design, tech, and strategy.
-Dynamic Grid: Use JavaScript to create a dynamic gallery from Articles.html
+Dynamic Grid: Use Python to create a dynamic gallery from Articles.html. 
 Goal: Thought leadership; attract recurring visitors and demonstrate expertise.
 
 1.5. Projects Section
@@ -237,7 +237,7 @@ Technology:
 - Flask, Python, HTML5, CSS3, JavaScript 
 - Google Fonts and Icons
 - Responsive media queries
-- Render for Hosting
+- Render for Deployment
 
 Resources:
 List of sources (facts, text, graphics, sound, video) you will use in the pages above
