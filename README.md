@@ -6,7 +6,7 @@ Python Module - Final Assessment
 >>Github Repository (link to page)
 https://github.com/aragon023/Python-Module-Final-Assesment.git
 
->>Deploymen in Render (link to page)
+>>Deployment in Render (link to page)
 https://python-module-final-assesment.onrender.com
 
 Planning Analysis Sheet
